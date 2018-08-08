@@ -43,10 +43,12 @@ def find_date(url,sheet):
 
 if __name__ == '__main__':
     urllist = []
-    url1 = 'https://search.jd.com/search?keyword=%E9%A5%AE%E7%94%A8%E6%B0%B4&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E9%A5%AE%E7%94%A8%E6%B0%B4&psort=3&cid2=1585&cid3=10975&stock=1&click=0'
+    url1 = 'https://search.jd.com/search?keyword=%E9%A5%AE%E7%94%A8%E6%B0%B4&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E9%A5%AE%E7%94%A8%E6%B0%B4&cid2=1585&cid3=10975&stock=1&psort=3&click=0'
     url2 = 'https://search.jd.com/search?keyword=%E9%A5%AE%E7%94%A8%E6%B0%B4&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E9%A5%AE%E7%94%A8%E6%B0%B4&psort=3&cid2=1585&cid3=10975&stock=1&page=3&s=61&click=0'
+    url3 = 'https://search.jd.com/search?keyword=%E9%A5%AE%E7%94%A8%E6%B0%B4&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E9%A5%AE%E7%94%A8%E6%B0%B4&psort=3&cid2=1585&cid3=10975&stock=1&page=5&s=121&click=0'
     urllist.append(url1)
     urllist.append(url2)
+    urllist.append(url3)
 
     # 写入excel方法
     book = Workbook()
