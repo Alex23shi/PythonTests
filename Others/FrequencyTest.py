@@ -10,7 +10,7 @@ import jieba.analyse
 wf = open('./clean_title.txt', 'w+')
 for line in open('./Comments.csv'):
     item = line.strip('\n\r').split('\t') # 制表格切分
-    # print item[1]
+    print (item[3])
     tags = jieba.analyse.extract_tags(item[3]) # jieba分词
     tagsw = ",".join(tags) # 逗号连接切分的词
     wf.write(tagsw)
@@ -35,3 +35,4 @@ with open('./clean_title.txt') as wf, open("word.txt", 'w') as wf2: #打开文�
         print
         key, word_dict[key]
         wf2.write(key + ' ' + str(word_dict[key]) + '\n') #写入文档
+

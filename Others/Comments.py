@@ -21,7 +21,7 @@ sheet.write(0, 0, '用户名')
 sheet.write(0, 1, '时间戳')
 sheet.write(0, 2, '客户端')
 sheet.write(0, 3, '评价')
-f = open("./Comments.csv", 'wt')
+f = open("./Comments.csv", 'w+')
 r = 1
 while data['page'] < 100 :
     t = s.get(url, params = data).text
